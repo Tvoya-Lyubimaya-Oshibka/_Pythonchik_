@@ -1,0 +1,20 @@
+#Напишите программу, которая определяет наименьшее из четырёх чисел.
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+mini1 = 0
+mini2 = 0
+if a <= b:
+    mini1 = a
+else:
+    mini1 = b
+if c <= d:
+    mini2 = c
+else:
+    mini2 = d
+if mini1 <= mini2:
+    print(mini1)
+else:
+    print(mini2)
