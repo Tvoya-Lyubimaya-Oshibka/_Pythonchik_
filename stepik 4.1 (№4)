@@ -1,0 +1,16 @@
+#Напишите программу, которая считывает три числа и подсчитывает сумму только положительных чисел.
+
+a = int(input())
+b = int(input())
+c = int(input())
+summi = 0
+if a > 0:
+    summi += a
+if b  0:
+    summi += b
+if c > 0:
+    summi += c
+if a < 0 and b < 0 and c < 0:
+    print(0)
+else:
+    print(summi)
