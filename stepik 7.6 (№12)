@@ -1,0 +1,20 @@
+#Дано натуральное число. Напишите программу, которая определяет,
+#является ли последовательность его цифр при просмотре справа налево упорядоченной по неубыванию.
+
+a = int(input())
+count = 0
+lasty = 0
+flag = True
+while a != 0:
+    lasty = a%10
+    if lasty >= count:
+        flag = True
+        count = lasty
+    else:
+        flag = False
+        break
+    a //= 10
+if flag == True:
+    print('YES')
+else:
+    print('NO')
